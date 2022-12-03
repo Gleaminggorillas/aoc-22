@@ -2281,9 +2281,23 @@
 2244
 8805")
 
+(defn max-cals [input]
+(->> (str/split input #"\n\n")
+     (map #(to-sum %))
+     (apply max)))
 
+(max-cals data)
+
+
+;; (defn max-three [input]
 (->> (str/split data #"\n\n")
      (map #(to-sum %))
-     (apply max))
+     (sort)
+     (take-last 3)
+     (reduce +)
+;;     (reverse)
+     )
+;;)
+
 
 
