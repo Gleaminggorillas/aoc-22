@@ -1,6 +1,5 @@
 (ns gg.day-one
-  (:require [clojure.string :as str]
-            ))
+  (:require [clojure.string :as str]))
 
 (def toy-data "1000
 2000
